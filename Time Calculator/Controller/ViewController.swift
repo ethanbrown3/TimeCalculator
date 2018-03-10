@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
 
+    var timeShiftArray : [TimeShift] = []
+    
     @IBOutlet weak var shiftTableView: UITableView!
     @IBOutlet weak var totalHoursLabel: UILabel!
     @IBOutlet weak var totalMinutesLabel: UILabel!
@@ -39,11 +41,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             withIdentifier: "customTimeShiftCell",
             for: indexPath
             ) as! TimeShiftCell
+        let newTimeShift = TimeShift()
+        newTimeShift.startTime = "01:00 AM"
+        newTimeShift.endTime = "05:00 AM"
+        newTimeShift.totalTime = "04:00"
+        timeShiftArray.append(newTimeShift)
         
-        let shiftArray = ["01:00 AM", "02:00 PM", "3:00 AM"]
-        
-        cell.StartTime.text = shiftArray[indexPath.row]
-      
+        cell.StartTime.text = timeShiftArray[indexPath.row].startTime
+        cell.EndTime.text = timeShiftArray[indexPath.row].endTime
+        cell.TotalShiftTime.text = timeShiftArray[indexPath.row].totalTime
+        cell.accessoryType = .disclosureIndicator
         
         return cell
     }
@@ -51,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 3
+        return 1
     }
 
 
