@@ -12,6 +12,8 @@
 		2B336C77203A2E2700EF1092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B336C75203A2E2700EF1092 /* Main.storyboard */; };
 		2B336C79203A2E2700EF1092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B336C78203A2E2700EF1092 /* Assets.xcassets */; };
 		2B336C7C203A2E2700EF1092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B336C7A203A2E2700EF1092 /* LaunchScreen.storyboard */; };
+		2BEBE01720539C01001A7B11 /* TimeShiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEBE01520539C01001A7B11 /* TimeShiftCell.swift */; };
+		2BEBE01820539C01001A7B11 /* TimeShiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BEBE01620539C01001A7B11 /* TimeShiftCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2B336C78203A2E2700EF1092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B336C7B203A2E2700EF1092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B336C7D203A2E2700EF1092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BEBE01520539C01001A7B11 /* TimeShiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeShiftCell.swift; sourceTree = "<group>"; };
+		2BEBE01620539C01001A7B11 /* TimeShiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeShiftCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		2B336C70203A2E2600EF1092 /* Time Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				2BEBE01420539B4A001A7B11 /* Products */,
+				2BEBE01320539B0D001A7B11 /* Controller */,
+				2BEBE01220539AF9001A7B11 /* View */,
 				2B336C71203A2E2700EF1092 /* AppDelegate.swift */,
-				2B336C73203A2E2700EF1092 /* ViewController.swift */,
-				2B336C75203A2E2700EF1092 /* Main.storyboard */,
 				2B336C78203A2E2700EF1092 /* Assets.xcassets */,
-				2B336C7A203A2E2700EF1092 /* LaunchScreen.storyboard */,
 				2B336C7D203A2E2700EF1092 /* Info.plist */,
 			);
 			path = "Time Calculator";
+			sourceTree = "<group>";
+		};
+		2BEBE01220539AF9001A7B11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBE01920539C07001A7B11 /* Custom Cells */,
+				2B336C7A203A2E2700EF1092 /* LaunchScreen.storyboard */,
+				2B336C75203A2E2700EF1092 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BEBE01320539B0D001A7B11 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2B336C73203A2E2700EF1092 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2BEBE01420539B4A001A7B11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		2BEBE01920539C07001A7B11 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2BEBE01520539C01001A7B11 /* TimeShiftCell.swift */,
+				2BEBE01620539C01001A7B11 /* TimeShiftCell.xib */,
+			);
+			path = "Custom Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +164,7 @@
 				2B336C7C203A2E2700EF1092 /* LaunchScreen.storyboard in Resources */,
 				2B336C79203A2E2700EF1092 /* Assets.xcassets in Resources */,
 				2B336C77203A2E2700EF1092 /* Main.storyboard in Resources */,
+				2BEBE01820539C01001A7B11 /* TimeShiftCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B336C74203A2E2700EF1092 /* ViewController.swift in Sources */,
+				2BEBE01720539C01001A7B11 /* TimeShiftCell.swift in Sources */,
 				2B336C72203A2E2700EF1092 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
